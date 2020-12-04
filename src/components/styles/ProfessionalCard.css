@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;700&display=swap');
+
+.window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 121px;
+}
+.ProfessionalCard {
+    display: flex;
+    flex-direction: column;
+    height: 860px;
+    width: 1198px;
+    border: 0px;
+    border-radius: 50px;
+    padding: 61px 78.85px;
+    background-color: #B14F4E;
+}
+header {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 30px;
+    width: 153px;
+}
+.menu-icon {
+    border: 0px;
+    background-color: transparent;
+}
+.menu-icon:focus {
+    outline: none;
+}
+.mini-diamond {
+    height: 22.42px;
+    width: 19.56px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: -50px;
+    left: 800px;
+}
+.information {
+    display: flex;
+}
+.texts {
+    align-self: center;
+    height: 300.44px;
+    width: 100%;
+    margin: 203px 0px 32px 0px;
+    font-family: 'Signika', sans-serif;
+    color: #ECF6FF;
+}
+.texts h3 {
+    font-size: 48px;
+    font-weight: lighter;
+    margin: 0px;
+    color: #863B3B;
+}
+.texts h1 {
+    font-size: 64px;
+    margin: 0px;
+    line-height: 60pt;
+    margin: 18px 0px;
+}
+.texts h5 {
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 0px;
+}
+.avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 578px;
+    width: 507px;
+}
+.avatar img {
+    align-self: center;
+    height: 578px;
+    width: 507px;
+    margin-top: 203px;
+    object-fit: cover;
+}
+.avatar a {
+    color: white;
+    font-family: 'Signika', sans-serif;
+    text-align: end;
+}
+.see-more{
+    height: 58px;
+    width: 211px;
+    border: 0px;
+    border-radius: 30px;
+    background-color: #B14F4E;
+    color: white;
+    box-shadow: 0px 4px 4px #863B3B;
+    font-family: 'Signika', sans-serif;
+    font-size: 24px;
+}
+.see-more:hover {
+    height: 62px;
+    width: 214px;
+}
+.see-more:focus {
+    outline: none;
+}
+.diamond {
+    position: relative;
+    top: -500px;
+    left: -755px;
+}
+.like {
+    position: relative;
+    top: -300px;
+    left: -100px;
+}
+.icons {
+    width: 0px;
+    height: 0px;
+    border: 5px;
+}
