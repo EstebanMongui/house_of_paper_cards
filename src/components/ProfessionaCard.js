@@ -23,36 +23,33 @@ class ProfessionalCard extends React.Component{
         } = this.props
         return(
             <section className="window">
-                <body className="ProfessionalCard">
+                <div className="ProfessionalCard">
                     <header>
-                        <div className="logo"> <img src={logo} alt=""/></div>
-                        <button className="menu-icon"> <img src={menuIcon} alt=""/> </button>
+                        <div className="logo"> <img src={logo} alt="logo"/></div>
+                        <button className="menu-icon"> <img src={menuIcon} alt="munú"/> </button>
                     </header>
-                    <div className="mini-diamond"><img src={smallDiamond} alt=""/></div>
+                    <div className="mini-diamond"><img src={smallDiamond} alt="small diamond"/></div>
                     <section className="information">
                         <div className="texts">
                             <h3>{characterName}</h3>
-                            <h1> <strong>{firstName} / <br/>{lastName} </strong> </h1>
+                            <h1> <strong>{firstName} <br/>{lastName} </strong> </h1>
                             <h5> {description} </h5>
+                            <a href={articleUrl} target="_blank">
+                                <button className="see-more" src>
+                                    Ver más
+                                </button>
+                            </a>
                         </div>
                         <figure className="avatar">
-                            <img src={avatarUrl} alt=""/>
+                            <img src={avatarUrl} alt="Fotografía"/>
                             <a href={imgCreditsUrl} target="_blank">{imgCredits}</a>
                         </figure>
                     </section>
-                    <a href={articleUrl} target="_blank">
-                        <button className="see-more" src>
-                            Ver más
-                        </button>
-                    </a>
-                </body>
-                <div className="icons">
-                    <figure className="diamond">
-                        <img src={diamond} alt=""/>
-                    </figure>
-                    <figure className="like">
-                        <img src={like} alt=""/>
-                    </figure>
+                    <div className="icons">
+                        <figure className="diamond">
+                            <img src={diamond} alt="diamond"/>
+                        </figure>
+                    </div>
                 </div>
             </section>
         )
