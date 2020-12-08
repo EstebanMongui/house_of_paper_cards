@@ -4,53 +4,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     margin: 121px;
+    max-width: 1440px;
+    width: auto;
 }
 .ProfessionalCard {
-    display: flex;
-    flex-direction: column;
-    height: 860px;
-    width: 1198px;
+    max-width: 1024;
+    width: 100%;
+    height: 100%;
     border: 0px;
     border-radius: 50px;
-    padding: 61px 78.85px;
+    padding: 40px 0px 0px 80px;
     background-color: #B14F4E;
 }
 header {
     display: flex;
-    height: 30px;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    height: 30px;
 }
 .logo {
-    height: 30px;
-    width: 153px;
+    max-height: 30px;
+    max-width: 153px;
+    height: 100%;
+}
+.logo img {
+    object-fit: contain;
+    height: 100%;
 }
 .menu-icon {
-    border: 0px;
     background-color: transparent;
+    margin-right: 50px;
+    border: 0px;
 }
 .menu-icon:focus {
     outline: none;
 }
 .mini-diamond {
-    height: 22.42px;
-    width: 19.56px;
-    margin: 0px;
-    padding: 0px;
     position: relative;
     top: -50px;
-    left: 800px;
+    left: 70%;
 }
 .information {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
 }
 .texts {
-    align-self: center;
-    height: 300.44px;
-    width: 100%;
-    margin: 203px 0px 32px 0px;
+    width: 50%;
+    margin: 0px 0px 32px 0px;
     font-family: 'Signika', sans-serif;
     color: #ECF6FF;
 }
@@ -61,34 +65,36 @@ header {
     color: #863B3B;
 }
 .texts h1 {
-    font-size: 64px;
+    font-size: 58px;
     margin: 0px;
-    line-height: 60pt;
+    line-height: 50pt;
     margin: 18px 0px;
 }
 .texts h5 {
-    font-size: 18px;
     font-weight: lighter;
+    font-size: 18px;
     margin: 0px;
+    margin-bottom: 40px;
 }
 .avatar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 578px;
-    width: 507px;
+    text-align: end;
+    max-width: 456px;
+    width: 50%;
+    margin: 0;
 }
 .avatar img {
-    align-self: center;
-    height: 578px;
-    width: 507px;
-    margin-top: 203px;
-    object-fit: cover;
+    object-fit: contain;
+    width: 90%;
+    /* clip-path: inset(19% 0px 0px 0px); */
 }
 .avatar a {
-    color: white;
+    justify-self: flex-end;
     font-family: 'Signika', sans-serif;
-    text-align: end;
+    font-size: 12px;
+    color: white;
+    margin-right: 10%;
 }
 .see-more{
     height: 58px;
@@ -108,18 +114,90 @@ header {
 .see-more:focus {
     outline: none;
 }
-.diamond {
-    position: relative;
-    top: -500px;
-    left: -755px;
+.icons{
+    position: absolute;
+    left: 4%;
+    top: 55%;
 }
-.like {
-    position: relative;
-    top: -300px;
-    left: -100px;
+
+@media screen and (max-width: 1439px){
+    .icons {
+        display: none;
+    }
 }
-.icons {
-    width: 0px;
-    height: 0px;
-    border: 5px;
+
+@media screen and (max-width: 1023px){
+    .ProfessionalCard {
+        padding: 40px 20px 20px 20px;
+    }
+    .menu-icon{
+        margin: initial;
+    }
+    .information {
+        display: block;
+    }
+    .texts {
+        width: auto;
+        font-size: 52px;
+        margin-bottom: 5px;
+    }
+    .texts h3 {
+        font-size: 1em;
+    } 
+    .texts h1 {
+        line-height: initial;
+        font-size: 1em;
+        margin: 5px 0px;
+    }
+    .texts h5 {
+        font-size: .4em;
+    }
+    .see-more {
+        height: 38px;
+        width: 141px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .avatar{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .window {
+        margin: 0px;
+    }
+    .ProfessionalCard{
+        border-radius: 10px;
+    }
+    .texts {
+        font-size: 48px;
+    }
+    .avatar {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .window {
+        margin: 0px;
+    }
+    .ProfessionalCard {
+        width: auto;
+        border-radius: initial;
+    }
+    .mini-diamond {
+        position: relative;
+        left: 50%;
+    }
+    .texts{
+        font-size: 42px;
+    }
+    .see-more {
+        position: absolute;
+        z-index: 2;
+    }
+    .avatar {
+        position: relative;
+        z-index: 1;
+    }
 }
